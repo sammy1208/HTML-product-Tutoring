@@ -324,6 +324,7 @@ $neutral-10: #F9F9F9;
 $neutral-40: #ECECEC;
 $neutral-50: #D4D4D4;
 $neutral-60: #909090;
+$neutral-70: #808080;
 $neutral-80: #4B4B4B;
 
 $info-10: #D4F9FE;
@@ -343,7 +344,7 @@ $danger: #d65f5f;
 
 // $success:       $green !default;
 // $info:          $cyan !default;
-// $warning:       $yellow !default;
+$warning:       $yellow !default;
 // $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
@@ -370,6 +371,7 @@ $theme-colors: (
   "gray-40": $neutral-40,
   "gray-50": $neutral-50,
   "gray-60": $neutral-60,
+  "gray-70": $neutral-70,
   "gray-80": $neutral-80,
   
   "info-10": $info-10,

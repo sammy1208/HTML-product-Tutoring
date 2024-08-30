@@ -39,11 +39,32 @@
   }
   &-list-1{
     width: 27%;
+    padding: 12px;
+    
   }
   &-list-2{
     width: 27%;
+    padding: 12px;
   }
   &-list-3{
     width: 46%;
+    padding: 12px 24px;
   }
+}
+.dropdown-item-title{
+  padding: 12px;
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+.ca{
+  width: 100px;
+  height: 100px;
+}
+
+.material-symbols-outlined-fill {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
