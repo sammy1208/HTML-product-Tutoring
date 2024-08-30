@@ -1,0 +1,49 @@
+.header{
+  border-radius: 100px;
+  box-shadow: 0px 2px 40px 0px #0068FF1A;
+  @include mobile-larger{
+    box-shadow: none;
+  }
+  &-logo{
+    width: 200px;
+  }
+}
+.form-control{
+  width: 425px;
+}
+.dropdown-item{
+  padding: 12px;
+  padding-left: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  
+  &::after {
+    content: "\e5cc";
+    font-family: "Material Symbols Outlined";
+  }
+  &:hover {
+    background: $primary;
+    color: $white;
+    font-weight: bold;
+    &::after {
+      color: $white;
+    }
+  }
+
+
+}
+.dropdown{
+  &-w{
+    width: 863px;
+  }
+  &-list-1{
+    width: 27%;
+  }
+  &-list-2{
+    width: 27%;
+  }
+  &-list-3{
+    width: 46%;
+  }
+}
