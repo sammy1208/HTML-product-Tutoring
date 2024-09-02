@@ -30,25 +30,37 @@
       color: $white;
     }
   }
+  }
 
-
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "\e313";
+    font-family: "Material Symbols Outlined";
+    border: none;
+  }
 }
 .dropdown{
-  &-w{
-    width: 863px;
+  &-width{
+    width: 100%;
+    max-width: 863px;
+
   }
-  &-list-1{
-    width: 27%;
-    padding: 12px;
-    
+  &-list-1,
+  &-list-2, 
+  &-list-3 {
+    height: calc(100vh - 190px);
+    overflow: scroll;
   }
-  &-list-2{
+  &-list-1,
+  &-list-2 {
     width: 27%;
-    padding: 12px;
+    padding: 12px 12px 4px;
   }
   &-list-3{
     width: 46%;
-    padding: 12px 24px;
+    padding: 12px 24px 4px;
     padding-bottom: 0;
   }
 }
@@ -67,5 +79,13 @@
   'FILL' 1,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 24;
+}
+.dropdown-menu[data-bs-popper]{
+  left: 15%;
+}
+.dropdown-item-menu{
+  height: calc(100vh - 100px);
+  overflow: scroll;
+  padding-bottom: 20px;
 }
