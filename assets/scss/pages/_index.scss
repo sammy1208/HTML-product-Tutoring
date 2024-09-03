@@ -1,14 +1,4 @@
-.btn-nav-suject{
-  :active{
-    color: #ffffff;
-    background-color: $primary-100;
-  }
-  color: $neutral-80;
-  border: $neutral-40 1px solid;
-  :hover{
-    color: #ffffff;
-  }
-}
+
 .img-flower{
   &-left{
     position: relative;
@@ -28,7 +18,7 @@
       background-repeat: no-repeat;
     }
   }
-  &-r{
+  &-right{
     &::before {
       content:"";
       position: absolute;
@@ -42,14 +32,52 @@
       background-repeat: no-repeat;
     }
   }
+  &-title{
+    position: relative;
+    &::before {
+      content:"";
+      position: absolute;
+      z-index: 1;
+      left: -88px;
+      top: 0;
+      background-image: url(/assets/images/deco/polygon-1.png);
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+    }
+  }
+  &-title2{
+    position: relative;
+    &::before {
+      content:"";
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      bottom: -94px;
+      transform: translatey(0);
+      background-image: url(/assets/images/deco/line-2.png);
+      width: 439px;
+      height: 94px;
+      background-repeat: no-repeat;
+    }
+  }
 } 
-
-
 
 .shadows-card{
   box-shadow: 0px 25px 50px -12px #0000001F;
 }
 .btn{
+  &-nav-suject{
+    :active{
+      color: #ffffff;
+      background-color: $primary-100;
+    }
+    color: $neutral-80;
+    border: $neutral-40 1px solid;
+    :hover{
+      color: #ffffff;
+    }
+  }
   &-arrow{
     box-shadow: 0px 10px 15px -3px #0000001A;    
     &:hover{
@@ -92,34 +120,5 @@
   &::after {
     content: "\e5c8";
     font-family: "Material Symbols Outlined";
-  }
-}
-.img-flower-title{
-  position: relative;
-  &::before {
-    content:"";
-    position: absolute;
-    z-index: 1;
-    left: -88px;
-    top: 0;
-    background-image: url(/assets/images/deco/polygon-1.png);
-    width: 80px;
-    height: 80px;
-    background-repeat: no-repeat;
-  }
-}
-.img-flower-title2{
-  position: relative;
-  &::before {
-    content:"";
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    bottom: -94px;
-    transform: translatey(0);
-    background-image: url(/assets/images/deco/line-2.png);
-    width: 439px;
-    height: 94px;
-    background-repeat: no-repeat;
   }
 }
