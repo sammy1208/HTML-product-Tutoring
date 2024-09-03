@@ -10,8 +10,8 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="banner-subject py-md-10 py-7 img-flower">
-      <div class="container">
+    <div class="banner-subject py-md-10 py-7 img-flower-left">
+      <div class="container img-flower-r">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-lg-7 mb-3">
             <li class="breadcrumb-item"><a href="#">所有課程</a></li>
@@ -301,14 +301,13 @@
       </div>
       <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1">
         <div class="col mb-5 mb-lg-0">
-          <div class="card border-0 shadows-card">
+          <div class="border-0 shadows-card d-flex d-md-block">
             <div class="position-relative mb-3">
               <img src="/assets/images/course-5.png" class="card-img-top" alt="course">
               <span class="position-absolute top-0 start-0 badge rounded-pill bg-alers-10 text-alers-100 mt-3 ms-3 fs-8 fw-semibold">
                 限時 8 折 🔥
               </span>
-            </div>
-            
+            </div>            
             <section class="px-3">
               <h6 class="text-black pb-3 fs-7 fs-lg-6">小白也會！從零開始學習 Python 程式設計</h6>
               <div class="d-flex justify-content-between pb-3 border-bottom">
@@ -335,37 +334,37 @@
           </div>
         </div>
         <div class="col mb-5 mb-lg-0">
-          <div class="card border-0 shadows-card">
-            <div class="position-relative mb-3">
-              <img src="/assets/images/course-5.png" class="card-img-top" alt="course">
-              <span class="position-absolute top-0 start-0 badge rounded-pill bg-alers-10 text-alers-100 mt-3 ms-3 fs-8 fw-semibold">
-                限時 8 折 🔥
-              </span>
-            </div>
-            
-            <section class="px-3">
-              <h6 class="text-black pb-3 fs-7 fs-lg-6">小白也會！從零開始學習 Python 程式設計</h6>
-              <div class="d-flex justify-content-between pb-3 border-bottom">
-                <div class="d-flex align-items-center">
-                  <img src="/assets/images/avatar-2.png" alt="avatar" class="pe-1">
-                  <p>Kelly Hsu</p>
-                </div>
-                <div class="text-end">
-                  <p class="text-secondary fw-semibold fs-7 fs-lg-6">已購買</p>
-                  <p class="fs-8 text-gray-70 text-decoration-line-through">NT$ 3,200</p>
-                </div>
+          <div class="border-top pt-3">
+            <div class=" pb-5">
+              <div class="position-relative me-1">
+                <img src="/assets/images/course-5.png" class="object-fit-cover rounded w-100" alt="course" style="width: 100px; height: 100px;">
+                <span class="position-absolute top-0 start-0 badge rounded-pill bg-alers-10 text-alers-100 mt-12 ms-12">
+                  8 折
+                  <span class="visually-hidden">unread messages</span>
+                </span>
               </div>
-              <div class="d-flex align-items-center py-3 w-100">
-                <div>
-                  <span class="badge rounded-pill bg-gray-40 fs-8 text-gray-80 px-2 mb-12">程式開發</span>
+              <section>
+                <h6 class="text-black pb-3">小白也會！從零開始學習 Python 程式設計</h6>
+                <div class="d-flex justify-content-between pb-1 border-bottom">
+                  <div class="d-flex align-items-center">
+                    <img src="/assets/images/avatar-2.png" alt="avatar" class="pe-1">
+                    <p>Kelly Hsu</p>
+                  </div>
+                  <div class="text-end">
+                    <p class="text-primary-100 fw-semibold">NT$ 2,480</p>
+                    <p class="fs-9 text-gray-70 text-decoration-line-through">NT$ 3,200</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center py-1 w-100">
                   <p class="fs-8">已有 420 位同學加入</p>
-                </div>
-                <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto">
-                  star
+                  <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto">
+                    star
                   </span>
-                  <p class="text-black fs-8">4.0<span class="text-gray-70 fs-8">(333)</span></p>
-              </div>
-            </section>
+                  <p class="text-black">4.0<span class="text-gray-70 fs-9">(333)</span></p>
+                </div>
+              </section>
+              
+            </div>
           </div>
         </div>
         <div class="col mb-5 mb-lg-0">
@@ -454,40 +453,45 @@
       </nav>
     </main>
 
-    <div class="container rounded-3 bg-primary-100">
-      <div class="d-flex">
-        <div>
-          <div class="row row-cols-2">
-            <div class="col">
-              <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
-                <div class="icon-1 me-5"></div>
-                <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
-              </div>
-            </div>
-            <div class="col">
+    <div class="rounded-pill bg-primary-100 py-lg-10 " style="max-width: 1656px;margin: 0 auto;">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col">
+            <div class="row row-cols-2">
+              <div class="col mb-2">
                 <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
-                <div class="icon-1 me-5"></div>
-                <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
+                  <div class="icon-1 me-5"></div>
+                  <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
+                </div>
               </div>
-            </div>
-            <div class="col">
-                <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
-                <div class="icon-1 me-5"></div>
-                <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
+              <div class="col mb-2">
+                  <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
+                  <div class="icon-1 me-5"></div>
+                  <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
+                </div>
               </div>
-            </div>
-            <div class="col">
-                <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
-                <div class="icon-1 me-5"></div>
-                <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
+              <div class="col mb-2">
+                  <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
+                  <div class="icon-1 me-5"></div>
+                  <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
+                </div>
+              </div>
+              <div class="col mb-2">
+                  <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
+                  <div class="icon-1 me-5"></div>
+                  <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
+                </div>
               </div>
             </div>
           </div>
+          <div class="col text-center">
+            <h4 class="fs-1 text-white"><span class="img-flower-title">想學什麼嗎？</span><br><span class="img-flower-title2">一探究竟。</span></h4>
+          </div>
         </div>
-        <div></div>
-        <h4>想學什麼嗎？</h4>
       </div>
     </div>
+
+
 
     <%- include('./layout/footer'); -%>
 

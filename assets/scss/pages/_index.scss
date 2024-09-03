@@ -10,23 +10,42 @@
   }
 }
 .img-flower{
-  position: relative;
-  background-color: $neutral-10;
-  z-index: -2;
-  &::before {
-    content:"";
-    position: absolute;
-    z-index: -1;
-    left: -48px;
-    top: 0;
-    // transform: translate(-50%, -50%);
-    background-image: url(/assets/images/deco/flower-2.png);
-    width: 560px;
-    height: 560px;
-    background-repeat: no-repeat;
-
+  &-left{
+    position: relative;
+    background-color: $neutral-10;
+    z-index: -2;
+    overflow: hidden;
+    &::before {
+      content:"";
+      position: absolute;
+      z-index: -1;
+      left: -48px;
+      top: -95px;
+      // transform: translatey(-50%);
+      background-image: url(/assets/images/deco/flower-2.png);
+      width: 560px;
+      height: 560px;
+      background-repeat: no-repeat;
+    }
   }
-}
+  &-r{
+    &::before {
+      content:"";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      bottom: 0;
+      transform: translatey(50%);
+      background-image: url(/assets/images/deco/flower-2.png);
+      width: 560px;
+      height: 560px;
+      background-repeat: no-repeat;
+    }
+  }
+} 
+
+
+
 .shadows-card{
   box-shadow: 0px 25px 50px -12px #0000001F;
 }
@@ -73,5 +92,34 @@
   &::after {
     content: "\e5c8";
     font-family: "Material Symbols Outlined";
+  }
+}
+.img-flower-title{
+  position: relative;
+  &::before {
+    content:"";
+    position: absolute;
+    z-index: 1;
+    left: -88px;
+    top: 0;
+    background-image: url(/assets/images/deco/polygon-1.png);
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+  }
+}
+.img-flower-title2{
+  position: relative;
+  &::before {
+    content:"";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: -94px;
+    transform: translatey(0);
+    background-image: url(/assets/images/deco/line-2.png);
+    width: 439px;
+    height: 94px;
+    background-repeat: no-repeat;
   }
 }
