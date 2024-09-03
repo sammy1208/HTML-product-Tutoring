@@ -4,7 +4,7 @@
       <a class="navbar-brand me-7" href="#"><img src="/assets/images/logo.png" alt="logo" class="header-logo"></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav w-100 d-flex align-items-center">
-          <li class="nav-item dropdown position-static border-0">
+          <li class="nav-item dropdown border-0">
             <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               探索
             </a>
@@ -182,29 +182,35 @@
       <button class="navbar-toggler ms-1 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <!-- <div class="offcanvas-header">
+      <div class="offcanvas offcanvas-end show d-xl-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <!-- <div class="offcanvas-header pb-0">
           <div class=" d-flex flex-column h-100 w-100">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <p class="dropdown-item-title">探索全部</p>
           </div>
         </div> -->
-        <div class="offcanvas-body d-md-none position-relative">
+        <div class="offcanvas-body position-relative pt-0">
           <div class="d-flex flex-column h-100 w-100">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             <div class="dropdown-item-menu">
-              <p class="dropdown-item-title">探索全部</p>
-              <ul class="list-unstyled">
+              
+              <ul class="list-unstyled pt-1">
+               <li><a class="dropdown-item-title" href="#">探索全部</a></li>
                <li><a class="dropdown-item" href="#">音樂</a></li>
                <li><a class="dropdown-item" href="#">攝影</a></li>
-               <li><a class="dropdown-item" href="#">程式</a></li>
-               <li>
-                <a class="dropdown-item active" data-bs-toggle="dropdown" href="#">程式</a>
-                <ul class="list-unstyled dropdown-menu">
-                  <li><a href="#"></a>程式入門</li>
-                  <li><a href="#"></a>網頁前端</li>
-                  <li><a href="#"></a>網頁後端</li>
+
+               <li class="dropdown position-static">
+                <a class="btn dropdown-item dropdown-toggle active" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  程式
+                </a>
+              
+                <ul class="dropdown-menu position-absolute top-0 start-0 dropdown-menu-2 pt-1" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item-title" href="#">探索全部</a></li>
+                  <li><a class="dropdown-item" href="#">程式入門</a></li>
+                  <li><a class="dropdown-item" href="#">程式入門</a></li>
+                  <li><a class="dropdown-item" href="#">程式入門</a></li>
                 </ul>
                </li>
+
                <li><a class="dropdown-item" href="#">藝術</a></li>
                <li><a class="dropdown-item" href="#">人文</a></li>
                <li><a class="dropdown-item" href="#">投資理財</a></li>
@@ -223,7 +229,7 @@
                <li><a class="dropdown-item" href="#">生活品味</a></li>
                <li><a class="dropdown-item" href="#">生活品味</a></li>
              </ul>
-             <div class="bg-white p-3 position-absolute bottom-0 start-50 translate-middle-x w-100">
+             <div class="bg-white py-2 px-5 position-absolute bottom-0 start-50 translate-middle-x w-100">
                <button class="btn btn-primary-100 w-100" type="submit">登入 / 註冊</button>
              </div>
             </div>

@@ -42,6 +42,10 @@
   }
 }
 .dropdown{
+  .active{
+    background-color: $primary;
+    color: #fff;
+  }
   &-width{
     width: 100%;
     max-width: 863px;
@@ -51,7 +55,7 @@
   &-list-2, 
   &-list-3 {
     height: calc(100vh - 190px);
-    overflow: scroll;
+    overflow-y: scroll;
   }
   &-list-1,
   &-list-2 {
@@ -85,7 +89,13 @@
   left: 15%;
 }
 .dropdown-item-menu{
-  height: calc(100vh - 100px);
-  overflow: scroll;
-  padding-bottom: 20px;
+  height: calc(100vh - 90px);
+  overflow-y: scroll;
+  // padding-bottom: 20px;
+}
+.dropdown-menu-2{
+  padding: 16px 24px;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
