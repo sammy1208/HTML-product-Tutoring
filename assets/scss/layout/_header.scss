@@ -49,11 +49,11 @@
   &-width{
     // width: 100%;
     max-width: 863px;
-
   }
   &-list-1,
   &-list-2, 
   &-list-3 {
+    max-height: 600px;
     height: calc(100vh - 190px);
     overflow-y: scroll;
   }

@@ -10,17 +10,17 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="banner-subject py-md-10 py-7 img-flower-left">
+    <div class="banner-subject py-lg-10 py-7 img-flower-left">
       <div class="container img-flower-right">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-lg-7 mb-3">
             <li class="breadcrumb-item"><a href="#">所有課程</a></li>
-            <li class="breadcrumb-item active" aria-current="page">程式課程</li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">程式課程</a></li>
           </ol>
         </nav>
-        <h2 class="fs-1 text-black mb-7">程式課程</h2>
+        <h2 class="fs-lg-1 fs-3 text-black mb-7">程式課程</h2>
         <div class="d-flex justify-content-between align-items-center">
-          <ul class="list-unstyled d-flex w-100 overflow">
+          <ul class="list-unstyled d-flex w-100 overflow m-0">
             <li><button type="button" class="btn btn-outline-primary-100 btn-nav-suject active me-1">所有程式</button></li>
             <li><button type="button" class="btn btn-outline-primary-100 btn-nav-suject me-1">所有程式</button></li>
             <li><button type="button" class="btn btn-outline-primary-100 btn-nav-suject me-1">所有程式</button></li>
@@ -34,16 +34,16 @@
       </div>
     </div>
 
-    <div class="container-lg pt-lg-7 pb-lg-10">
+    <div class="container-lg pt-lg-7 pb-lg-10 py-7">
       <ul class="nav justify-content-start border-bottom">
         <li class="nav-item">
-          <a class="nav-link nav-item-hover" aria-current="page" href="#">最熱門</a>
+          <a class="nav-link nav-item-hover py-3" aria-current="page" href="#">最熱門</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-item-hover" href="#">最新課程</a>
+          <a class="nav-link nav-item-hover py-3" href="#">最新課程</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-item-hover" href="#">話題最高</a>
+          <a class="nav-link nav-item-hover py-3" href="#">話題最高</a>
         </li>
       </ul>
       <div class="position-relative">
@@ -58,14 +58,14 @@
               </div>
               
               <section class="px-3">
-                <h6 class="text-black pb-3 fs-7 fs-lg-6">小白也會！從零開始學習 Python 程式設計</h6>
+                <h6 class="text-black pb-3 fs-5">小白也會！從零開始學習 Python 程式設計</h6>
                 <div class="d-flex justify-content-between pb-3 border-bottom">
                   <div class="d-flex align-items-center">
                     <img src="/assets/images/avatar-2.png" alt="avatar" class="pe-1">
                     <p>Kelly Hsu</p>
                   </div>
                   <div class="text-end">
-                    <p class="text-secondary fw-semibold fs-7 fs-lg-6">已購買</p>
+                    <p class="text-secondary fw-semibold fs-5">已購買</p>
                     <p class="fs-8 text-gray-70 text-decoration-line-through">NT$ 3,200</p>
                   </div>
                 </div>
@@ -74,7 +74,7 @@
                     <span class="badge rounded-pill bg-gray-40 fs-8 text-gray-80 px-2 mb-12">程式開發</span>
                     <p class="fs-8">已有 420 位同學加入</p>
                   </div>
-                  <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto">
+                  <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto fs-7 me-12">
                     star
                     </span>
                     <p class="text-black fs-8">4.0<span class="text-gray-70 fs-8">(333)</span></p>
@@ -82,7 +82,7 @@
               </section>
             </div>
           </div>
-          <div class="col d-none d-lg-block">
+          <div class="col d-none d-xl-block">
             <div class="card border-0 shadows-card">
               <div class="position-relative mb-3">
                 <img src="/assets/images/course-5.png" class="card-img-top" alt="course">
@@ -116,7 +116,7 @@
               </section>
             </div>
           </div>
-          <div class="col d-none d-lg-block">
+          <div class="col d-none d-xl-block">
             <div class="card border-0 shadows-card">
               <div class="position-relative mb-3">
                 <img src="/assets/images/course-5.png" class="card-img-top" alt="course">
@@ -150,7 +150,7 @@
               </section>
             </div>
           </div>
-          <div class="col d-none d-lg-block">
+          <div class="col d-none d-xl-block">
             <div class="card border-0 shadows-card">
               <div class="position-relative mb-3">
                 <img src="/assets/images/course-5.png" class="card-img-top" alt="course">
@@ -185,12 +185,12 @@
             </div>
           </div>
         </div>
-        <a class="btn btn-primary btn-arrow-back btn-arrow position-absolute top-50 start-0 translate-middle d-none d-lg-block" href="#" role="button"></a>
-        <a class="btn btn-primary btn-arrow-forward btn-arrow position-absolute top-50 start-100 translate-middle d-none d-lg-block" href="#" role="button"></a>
+        <a class="btn btn-primary btn-arrow-back btn-arrow position-absolute top-50 start-0 translate-middle d-none d-xl-block" href="#" role="button"></a>
+        <a class="btn btn-primary btn-arrow-forward btn-arrow position-absolute top-50 start-100 translate-middle d-none d-xl-block" href="#" role="button"></a>
       </div>
       <section>
         <div class="d-flex align-items-center justify-content-between mb-lg-7 mb-8">
-          <h3 class="text-black">熱門主題</h3>
+          <h3 class="text-black fs-md-2 fs-5">熱門主題</h3>
           <div>
             <a class="btn-arrow-back fs-7 p1 me-5" href="#" role="button"></a>
             <a class="btn-arrow-forward fs-7 p1 " href="#" role="button"></a>
@@ -214,14 +214,14 @@
         <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1">
           <div class="col mb-5 mb-lg-0">
             <div class="card border-gray-40">
-              <img src="/assets/images/teacher-4.png" class="card-img-top" alt="teacher">
+              <img src="/assets/images/teacher-4.png" class="rounded-top" alt="teacher">
               <div class="card-body text-center py-0">
                 <p class=" fw-semibold text-black py-3 border-bottom">Devon Lane<br><span class="fs-8 fw-normal">2,103 個課程</span></p>
                 <div class="d-flex align-items-center py-3 w-100">
                   <div>
                     <p class="fs-8">3,394 個學生</p>
                   </div>
-                  <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto">
+                  <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto fs-7 me-12">
                     star
                     </span>
                     <p class="text-black fs-8 fw-medium">4.0<span class="text-gray-70 fs-8 fw-medium">(333)</span></p>
@@ -303,7 +303,7 @@
         <div class="col mb-5 mb-lg-0">
           <div class="border-0 shadows-card d-flex d-md-block">
             <div class="position-relative mb-3">
-              <img src="/assets/images/course-5.png" class="card-img-top" alt="course">
+              <img src="/assets/images/course-5.png" class="card-img-top card-img-top-rounded" alt="course">
               <span class="position-absolute top-0 start-0 badge rounded-pill bg-alers-10 text-alers-100 mt-3 ms-3 fs-8 fw-semibold">
                 限時 8 折 🔥
               </span>
@@ -325,7 +325,7 @@
                   <span class="badge rounded-pill bg-gray-40 fs-8 text-gray-80 px-2 mb-12">程式開發</span>
                   <p class="fs-8">已有 420 位同學加入</p>
                 </div>
-                <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto">
+                <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto fs-7 me-12">
                   star
                   </span>
                   <p class="text-black fs-8">4.0<span class="text-gray-70 fs-8">(333)</span></p>
@@ -334,48 +334,13 @@
           </div>
         </div>
         <div class="col mb-5 mb-lg-0">
-          <div class="border-top pt-3">
-            <div class=" pb-5">
-              <div class="position-relative me-1">
-                <img src="/assets/images/course-5.png" class="object-fit-cover rounded w-100" alt="course" style="width: 100px; height: 100px;">
-                <span class="position-absolute top-0 start-0 badge rounded-pill bg-alers-10 text-alers-100 mt-12 ms-12">
-                  8 折
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </div>
-              <section>
-                <h6 class="text-black pb-3">小白也會！從零開始學習 Python 程式設計</h6>
-                <div class="d-flex justify-content-between pb-1 border-bottom">
-                  <div class="d-flex align-items-center">
-                    <img src="/assets/images/avatar-2.png" alt="avatar" class="pe-1">
-                    <p>Kelly Hsu</p>
-                  </div>
-                  <div class="text-end">
-                    <p class="text-primary-100 fw-semibold">NT$ 2,480</p>
-                    <p class="fs-9 text-gray-70 text-decoration-line-through">NT$ 3,200</p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center py-1 w-100">
-                  <p class="fs-8">已有 420 位同學加入</p>
-                  <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto">
-                    star
-                  </span>
-                  <p class="text-black">4.0<span class="text-gray-70 fs-9">(333)</span></p>
-                </div>
-              </section>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5 mb-lg-0">
-          <div class="card border-0 shadows-card">
+          <div class="border-0 shadows-card d-flex d-md-block">
             <div class="position-relative mb-3">
-              <img src="/assets/images/course-5.png" class="card-img-top" alt="course">
+              <img src="/assets/images/course-5.png" class="card-img-top card-img-top-rounded" alt="course">
               <span class="position-absolute top-0 start-0 badge rounded-pill bg-alers-10 text-alers-100 mt-3 ms-3 fs-8 fw-semibold">
                 限時 8 折 🔥
               </span>
-            </div>
-            
+            </div>            
             <section class="px-3">
               <h6 class="text-black pb-3 fs-7 fs-lg-6">小白也會！從零開始學習 Python 程式設計</h6>
               <div class="d-flex justify-content-between pb-3 border-bottom">
@@ -393,7 +358,7 @@
                   <span class="badge rounded-pill bg-gray-40 fs-8 text-gray-80 px-2 mb-12">程式開發</span>
                   <p class="fs-8">已有 420 位同學加入</p>
                 </div>
-                <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto">
+                <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto  fs-7 me-12">
                   star
                   </span>
                   <p class="text-black fs-8">4.0<span class="text-gray-70 fs-8">(333)</span></p>
@@ -402,14 +367,13 @@
           </div>
         </div>
         <div class="col mb-5 mb-lg-0">
-          <div class="card border-0 shadows-card">
+          <div class="border-0 shadows-card d-flex d-md-block">
             <div class="position-relative mb-3">
-              <img src="/assets/images/course-5.png" class="card-img-top" alt="course">
+              <img src="/assets/images/course-5.png" class="card-img-top card-img-top-rounded" alt="course">
               <span class="position-absolute top-0 start-0 badge rounded-pill bg-alers-10 text-alers-100 mt-3 ms-3 fs-8 fw-semibold">
                 限時 8 折 🔥
               </span>
-            </div>
-            
+            </div>            
             <section class="px-3">
               <h6 class="text-black pb-3 fs-7 fs-lg-6">小白也會！從零開始學習 Python 程式設計</h6>
               <div class="d-flex justify-content-between pb-3 border-bottom">
@@ -427,7 +391,40 @@
                   <span class="badge rounded-pill bg-gray-40 fs-8 text-gray-80 px-2 mb-12">程式開發</span>
                   <p class="fs-8">已有 420 位同學加入</p>
                 </div>
-                <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto">
+                <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto  fs-7 me-12">
+                  star
+                  </span>
+                  <p class="text-black fs-8">4.0<span class="text-gray-70 fs-8">(333)</span></p>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="col mb-5 mb-lg-0">
+          <div class="border-0 shadows-card d-flex d-md-block">
+            <div class="position-relative mb-3">
+              <img src="/assets/images/course-5.png" class="card-img-top card-img-top-rounded" alt="course">
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-alers-10 text-alers-100 mt-3 ms-3 fs-8 fw-semibold">
+                限時 8 折 🔥
+              </span>
+            </div>            
+            <section class="px-3">
+              <h6 class="text-black pb-3 fs-7 fs-lg-6">小白也會！從零開始學習 Python 程式設計</h6>
+              <div class="d-flex justify-content-between pb-3 border-bottom">
+                <div class="d-flex align-items-center">
+                  <img src="/assets/images/avatar-2.png" alt="avatar" class="pe-1">
+                  <p>Kelly Hsu</p>
+                </div>
+                <div class="text-end">
+                  <p class="text-secondary fw-semibold fs-7 fs-lg-6">已購買</p>
+                  <p class="fs-8 text-gray-70 text-decoration-line-through">NT$ 3,200</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center py-3 w-100">
+                <div>
+                  <span class="badge rounded-pill bg-gray-40 fs-8 text-gray-80 px-2 mb-12">程式開發</span>
+                  <p class="fs-8">已有 420 位同學加入</p>
+                </div>
+                <span class="material-symbols-outlined text-warning material-symbols-outlined-fill ms-auto  fs-7 me-12">
                   star
                   </span>
                   <p class="text-black fs-8">4.0<span class="text-gray-70 fs-8">(333)</span></p>
@@ -453,31 +450,31 @@
       </nav>
     </main>
 
-    <div class="rounded-pill bg-primary-100 py-lg-10 " style="max-width: 1656px;margin: 0 auto;">
+    <div class="rounded-3 bg-primary-100 py-lg-10 " style="max-width: 1656px;margin: 0 auto;">
       <div class="container-lg">
-        <div class="row d-lg-flex align-items-center d-block row-cols-xl-2 row-cols-1">
+        <div class="row d-flex align-items-center flex-column-reverse flex-xl-row row-cols-xl-2 row-cols-1">
           <div class="col">
             <div class="row row-cols-2">
               <div class="col mb-2">
-                <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
+                <div class="d-flex align-items-center p-4 bg-white rounded-1 w-100">
                   <div class="icon-1 me-5"></div>
                   <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
                 </div>
               </div>
               <div class="col mb-2">
-                  <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
+                  <div class="d-flex align-items-center p-4 bg-white rounded-3 w-100">
                   <div class="icon-1 me-5"></div>
                   <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
                 </div>
               </div>
               <div class="col mb-2">
-                  <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
+                  <div class="d-flex align-items-center p-4 bg-white rounded-3 w-100">
                   <div class="icon-1 me-5"></div>
                   <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
                 </div>
               </div>
               <div class="col mb-2">
-                  <div class="d-flex align-items-center p-4 bg-white rounded-3" style="width: 306px;">
+                  <div class="d-flex align-items-center p-4 bg-white rounded-3 w-100">
                   <div class="icon-1 me-5"></div>
                   <h6 class="text-black">網路行銷<br><span class="d-block mt-1 fs-8 fw-normal">342 門課程</span></h6>
                 </div>
@@ -485,7 +482,7 @@
             </div>
           </div>
           <div class="col d-flex justify-content-center">
-            <h4 class="fs-1 text-white"><span class="img-flower-title">想學什麼嗎？</span><br><span class="img-flower-title2">一探究竟。</span></h4>
+            <h4 class="fs-1 text-white h"><span class="img-flower-title">想學什麼嗎？</span><br><span class="img-flower-title2">一探究竟。</span></h4>
           </div>
         </div>
       </div>
