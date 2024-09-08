@@ -9,7 +9,7 @@
   </head>
   <body class="bg-gray-10">
     <%- include('./layout/header'); -%>
-    <div >
+    <div>
       <div class="container py-lg-10 py-0">
         <div class="d-flex justify-content-center mb-lg-7">
           <ul class="list-unstyled border-br d-flex justify-content-between" style="width: 428px;">
@@ -52,7 +52,7 @@
                 <div class="d-flex py-6 justify-content-between border-bottom">
                   <input class="form-check-input me-4" type="checkbox" value="" aria-label="...">
                   <div class="d-flex justify-content-between  align-items-lg-center flex-column flex-lg-row w-100">
-                    <img src="/assets/images/cart-1.png" alt="cart" class="me-2" style="width: 200px;">
+                    <img src="/assets/images/cart-2.png" alt="cart" class="me-2" style="width: 200px;">
                     <h5 class="me-2">使用 HTML、CSS 開發一個網站</h5>
                     <p class="mx-2">NT$ 1,200</p>
                     <div class="text-end">
@@ -66,7 +66,7 @@
                 <div class="d-flex py-6 justify-content-between border-bottom">
                   <input class="form-check-input me-4" type="checkbox" value="" aria-label="...">
                   <div class="d-flex justify-content-between  align-items-lg-center flex-column flex-lg-row w-100">
-                    <img src="/assets/images/cart-1.png" alt="cart" class="me-2" style="width: 200px;">
+                    <img src="/assets/images/cart-3.png" alt="cart" class="me-2" style="width: 200px;">
                     <h5 class="me-2">使用 HTML、CSS 開發一個網站</h5>
                     <p class="mx-2">NT$ 1,200</p>
                     <div class="text-end">
@@ -78,7 +78,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-none d-lg-block">
             <div class="bg-white rounded-1 d-flex flex-column p-5 show-data">
               <h4 class="pb-lg-5">訂單明細</h4>
               <div class="d-flex justify-content-between pb-lg-5 border-bottom mb-lg-5">
@@ -94,8 +94,60 @@
             </div>
           </div>
         </div>
+
+        <div class="d-lg-none d-block bill">
+          <button type="button" 
+          class="btn d-flex aling-items-center justify-content-between px-0 border-0 w-100" 
+          data-bs-toggle="modal" 
+          data-bs-target="#exampleModal">
+          <div class="text-start">
+            <p>展開明細<span class="material-symbols-outlined align-bottom"> keyboard_arrow_up </span></p>
+            <h4>NT$ 3,600</h4>
+          </div>
+          
+          <div class="btn btn-primary">前往結帳</div>
+          </button>
+         
+          <div 
+            class="modal fade bottom-0 rounded-0" 
+            id="exampleModal" 
+            tabindex="-1" 
+            aria-labelledby="exampleModalLabel" 
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">訂單明細</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-between pb-5 border-bottom mb-5">
+                      <p>2 項課程小計</p>
+                      <p class="fw-semibold">NT$ 3600</p>
+                    </div>
+                    <div class="d-flex justify-content-between pb-5">
+                      <p>總計</p>
+                      <p class="fs-5 fw-semibold">NT$ 3,600</p>
+                    </div>
+                    <p>確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</p>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex aling-items-center justify-content-between">
+                  <div class="text-start">
+                    <p>展開明細<span class="material-symbols-outlined align-bottom"> keyboard_arrow_up </span></p>
+                    <h4>NT$ 3,600</h4>
+                  </div>
+                  <button type="button" class="btn btn-primary">前往結帳</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

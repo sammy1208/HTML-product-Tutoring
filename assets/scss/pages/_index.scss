@@ -124,14 +124,137 @@
   width: 64px;
   background-color: #FF994F;
   border-radius: 16px;
-  color: #fff;
   font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   &::after {
-    content: "\e5c8";
-    font-family: "Material Symbols Outlined";
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/images/icons/megaphoneSimple.png);
+    background-repeat: no-repeat;
+  }
+}
+.icon-2{
+  height: 64px;
+  width: 64px;
+  background-color: #5E5E5E;
+  border-radius: 16px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/images/icons/camera.png);
+    background-repeat: no-repeat;
+  }
+}
+.icon-3{
+  height: 64px;
+  width: 64px;
+  background-color: #FF9BAD;
+  border-radius: 16px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/images/icons/chartBarHorizontal.png);
+    background-repeat: no-repeat;
+  }
+}
+.icon-4{
+  height: 64px;
+  width: 64px;
+  background-color: #564FFD;
+  border-radius: 16px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/images/icons/penNib.png);
+    background-repeat: no-repeat;
+  }
+}
+.icon-5{
+  height: 64px;
+  width: 64px;
+  background-color: #54DFF2;
+  border-radius: 16px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/images/icons/bugDroid.png);
+    background-repeat: no-repeat;
+  }
+}
+.icon-6{
+  height: 64px;
+  width: 64px;
+  background-color: #52E9BC;
+  border-radius: 16px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/images/icons/creditCard.png);
+    background-repeat: no-repeat;
+  }
+}
+.icon-7{
+  height: 64px;
+  width: 64px;
+  background-color: #CF93FF;
+  border-radius: 16px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/images/icons/headphones.png);
+    background-repeat: no-repeat;
+  }
+}
+.icon-8{
+  height: 64px;
+  width: 64px;
+  background-color: #0068FF;
+  border-radius: 16px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(/assets/images/icons/arrow.png);
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 4px;
   }
 }
 .h{
